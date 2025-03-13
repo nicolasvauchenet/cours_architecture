@@ -25,7 +25,8 @@ Le cours est divisé en **trois jours** :
 - **Modèle monolithique : principes, avantages, limites.**
 - **Architecture n-tiers : découpage en couches et hébergement.**
 - **Microservices : modularité et complexité.**
-- **Diagrammes UML : cas d’utilisation, classes, composants, déploiement.**
+- **Démonstrations et exemples en PHP et JavaScript.**
+- **Diagrammes UML : cas d’utilisation, composants, déploiement.**
 
 ### **Jour 2 : Architectures avancées & déploiement**
 
@@ -33,10 +34,10 @@ Le cours est divisé en **trois jours** :
 - **Clean Architecture : séparation des responsabilités.**
 - **Hexagonale : découplage et ports/adapters.**
 - **Hébergement et déploiement : serveurs, conteneurs, cloud.**
-- **Démonstrations et exemples en PHP.**
+- **Démonstrations et exemples en PHP et JavaScript.**
 
 ### **Jour 3 : Études de cas & évaluation**
 
 - **Études de cas et choix d’architectures.**
 - **Préparation à l’évaluation.**
-- **Examen final (1h30) : analyse et justification d’une architecture.**
+- **Examen final : analyse et justification d’une architecture.**
