@@ -37,9 +37,11 @@ Une application de gestion de tâches peut être divisée en trois microservices
 - **Microservice Tâches** → Création, modification et suppression des tâches.
 - **Microservice Notifications** → Envoi d’e-mails ou de notifications.
 
-### Exemple schématique d’une architecture microservices
+### Schéma d’une architecture 3-tiers :
 
-![Diagramme de composants Microservices](../images/composant-microservices.png)
+![Schéma d'une architecture monolithique vs microservices](../images/04-monolithe-vs-microservices-schema.jpg)
+
+### [Exemple de projet réalisé en microservices](https://github.com/nicolasvauche/microservices-project)
 
 ---
 

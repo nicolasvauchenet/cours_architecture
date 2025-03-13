@@ -25,9 +25,9 @@ métier, accès aux données) sont **regroupées dans un seul codebase et exécu
 - Une **base de données centralisée**.
 - Une **exécution sur un seul serveur ou une seule machine virtuelle**.
 
-### Exemple schématique d’un monolithe
+### Schéma d’une architecture monolithique :
 
-![Diagramme de composants Monolithique](../images/composant-monolithique.png)
+![Schéma d'une architecture monolithique](../images/02-monolithe-schema.png)
 
 ---
 
