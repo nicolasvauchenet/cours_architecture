@@ -52,29 +52,29 @@ Il n’existe pas d’**architecture parfaite**, mais un ensemble de **compromis
 Nous utiliserons **UML (Unified Modeling Language)** pour représenter **les architectures et leurs composants**.  
 Pas besoin d’être expert, l’idée est d’utiliser **quelques diagrammes simples** :
 
-### Diagramme de cas d'utilisation pour notre gestion de tâches
+### Diagramme de cas d'utilisation (exemple)
 
 Ce diagramme présente simplement les interactions entre l’utilisateur et le système.
 
-![Diagramme de cas d'utilisation](../images/uml-cas-utilisation-gestion-taches.png)
+![Diagramme de cas d'utilisation](../images/uml-cas-utilisation-exemple.png)
 
-### Diagramme de classes
+### Diagramme de classes (exemple)
 
 C'est la modélisation des entités principales.
 
-![Diagramme de classes](../images/uml-classes-gestion-taches.png)
+![Diagramme de classes](../images/uml-classes-exemple.png)
 
-### Diagramme de composants
+### Diagramme de composants (exemple)
 
 Ce diagramme montre l'organisation des blocs applicatifs.
 
-![Diagramme de composants](../images/uml-composants-gestion-taches.png)
+![Diagramme de composants](../images/uml-composants-exemple.png)
 
-### Diagramme de déploiement
+### Diagramme de déploiement (exemple)
 
 Ce diagramme montre où et comment sont hébergés les composants.
 
-![Diagramme de déploiement](../images/uml-deploiement-gestion-taches.png)
+![Diagramme de déploiement](../images/uml-deploiement-exemple.png)
 
 ---
 
