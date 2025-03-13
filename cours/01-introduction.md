@@ -58,11 +58,15 @@ Ce diagramme présente simplement les interactions entre l’utilisateur et le s
 
 ![Diagramme de cas d'utilisation](../images/uml-cas-utilisation-exemple.png)
 
+#### [Support de cours UML - Diagramme de Cas d'Utilisation](https://github.com/nicolasvauchenet/cours_methodologie/blob/main/Semaine%201%20-%20UML/Cours/02%20-%20Le%20diagramme%20de%20Cas%20d'Utilisation.md)
+
 ### Diagramme de classes (exemple)
 
 C'est la modélisation des entités principales.
 
 ![Diagramme de classes](../images/uml-classes-exemple.png)
+
+#### [Support de cours UML - Diagramme de Classes](https://github.com/nicolasvauchenet/cours_methodologie/blob/main/Semaine%201%20-%20UML/Cours/05%20-%20Le%20diagramme%20de%20Classes.md)
 
 ### Diagramme de composants (exemple)
 
