@@ -35,6 +35,10 @@ responsabilité bien définie.
 
 ![Schéma d'une architecture n-tiers](../images/03-n-tiers-schema.png)
 
+### Schéma général d’une architecture en couche :
+
+![Schéma d'une architecture en coouches](../images/03-layered-schema.png)
+
 ---
 
 ## 2. Avantages et Inconvénients du n-tiers
