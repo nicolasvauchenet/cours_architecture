@@ -52,14 +52,29 @@ Il n’existe pas d’**architecture parfaite**, mais un ensemble de **compromis
 Nous utiliserons **UML (Unified Modeling Language)** pour représenter **les architectures et leurs composants**.  
 Pas besoin d’être expert, l’idée est d’utiliser **quelques diagrammes simples** :
 
-- **Diagramme de cas d’utilisation** : interactions entre l’utilisateur et le système.
-- **Diagramme de composants** : organisation des blocs applicatifs.
-- **Diagramme de classes** : modélisation des entités principales.
-- **Diagramme de déploiement** : où et comment sont hébergés les composants.
+### Diagramme de cas d'utilisation pour notre gestion de tâches
 
-### Exemple UML : Diagramme de cas d'utilisation pour notre gestion de tâches
+Ce diagramme présente simplement les interactions entre l’utilisateur et le système.
 
-![Diagramme de cas d'utilisation](../images/cas-utilisation-gestion-taches.png)
+![Diagramme de cas d'utilisation](../images/uml-cas-utilisation-gestion-taches.png)
+
+### Diagramme de classes
+
+C'est la modélisation des entités principales.
+
+![Diagramme de classes](../images/uml-classes-gestion-taches.png)
+
+### Diagramme de composants
+
+Ce diagramme montre l'organisation des blocs applicatifs.
+
+![Diagramme de composants](../images/uml-composants-gestion-taches.png)
+
+### Diagramme de déploiement
+
+Ce diagramme montre où et comment sont hébergés les composants.
+
+![Diagramme de déploiement](../images/uml-deploiement-gestion-taches.png)
 
 ---
 
@@ -72,104 +87,106 @@ Elle sera proposée **en PHP et en JavaScript (Node.js)** pour que chacun puisse
 
 ```bash
 /gestion-taches
-├── /php                   # Implémentation en PHP
-│   ├── index.php          # Point d'entrée
-│   ├── db.php             # Connexion à la base de données
-│   ├── Task.php           # Modèle Task
-│   ├── taskController.php # Contrôleur des tâches
-│   ├── api.php            # API REST pour gérer les tâches
-│   ├── .env               # Configuration de la base de données
-│   ├── composer.json      # Dépendances PHP
+├── /php               # Version en PHP
+│   ├── index.php      # Point d'entrée principal
+│   ├── db.php         # Connexion à la base de données
+│   ├── tasks.php      # Gestion des tâches
+│   ├── .env           # Configuration (base de données, etc.)
+│   ├── composer.json  # Dépendances PHP
 │
-├── /nodejs                # Implémentation en Node.js
-│   ├── index.js           # Point d'entrée
-│   ├── db.js              # Connexion à la base de données
-│   ├── task.js            # Modèle Task
-│   ├── taskController.js  # Contrôleur des tâches
-│   ├── api.js             # API REST pour gérer les tâches
-│   ├── .env               # Configuration de la base de données
-│   ├── package.json       # Dépendances Node.js
+├── /nodejs            # Version en Node.js
+│   ├── index.js       # Point d'entrée principal
+│   ├── db.js          # Connexion à la base de données
+│   ├── tasks.js       # Gestion des tâches
+│   ├── .env           # Configuration (base de données, etc.)
+│   ├── package.json   # Dépendances Node.js
 │
-└── README.md              # Documentation
+└── README.md          # Documentation du projet
 ```
 
 ---
 
 ## 5. Mise en pratique pour les administrateurs infrastructure
 
-L’objectif est d’analyser l’infrastructure nécessaire au bon fonctionnement de l’application et d’anticiper son
-déploiement, sa gestion et sa maintenance.
-
-### Identification des composants techniques
-
-**Objectif :**  
-Recenser les éléments techniques nécessaires à l’hébergement et au fonctionnement de l’application.
-
-- Quels sont **les services clés** qui composent l’application ?
-- Quels sont les **besoins spécifiques** en matière de serveur web, base de données et API ?
-- Quels sont les **fichiers de configuration** et variables d’environnement à prendre en compte ?
-
-**Livrable attendu** : Un schéma des composants de l’application avec une brève description de leur rôle.
+L’objectif est de **comprendre les bases de l’hébergement d’une application backend** et d’**anticiper son déploiement
+**.  
+Cette mise en pratique vous permettra d’identifier **les éléments techniques**, de **préparer un environnement simple**,
+et d’**établir les premiers réflexes en matière de sécurité et de maintenance**.
 
 ---
 
-### Préparation de l’environnement d’hébergement
+### 5.1. Découverte des composants techniques
 
 **Objectif :**  
-Identifier la meilleure solution d’hébergement et prévoir une configuration adaptée.
+Se familiariser avec les **différents éléments techniques** qui composent l’application.
 
-- Quelle solution choisir entre **serveur physique, VPS, hébergement cloud ou conteneurs** ?
-- Quelle **configuration minimale** (CPU, RAM, stockage) serait recommandée pour un environnement de test et un
-  environnement de production ?
-- Quels logiciels et dépendances doivent être installés sur le serveur pour exécuter l’application ?
-    - (Ex : PHP + MySQL ou Node.js + PostgreSQL)
+- Quelle est la **différence** entre un serveur web, une base de données et une API ?
+- L’application est prévue pour fonctionner avec **deux technologies backend** (PHP et Node.js).
+    - Que faut-il installer sur un serveur pour exécuter **une application PHP** ?
+    - Que faut-il installer sur un serveur pour exécuter **une application Node.js** ?
+- À quoi sert une **base de données** et comment l’application s’y connecte-t-elle ?
+- Où sont stockés les **fichiers de configuration** et pourquoi sont-ils importants ?
 
-**Livrable attendu** : Un document précisant les prérequis matériels et logiciels pour héberger l’application.
+**Livrable attendu** : Une brève **explication écrite** des composants et de leur rôle dans l’application.
 
 ---
 
-### Planification des sauvegardes et maintenance
+### 5.2. Préparation d’un environnement de test
 
 **Objectif :**  
-Définir une stratégie de sauvegarde et de maintenance.
+Installer un environnement dédié aux tests **end-to-end** permettant de valider le bon fonctionnement de l’application
+avant son déploiement en production.
 
-- Quels fichiers et bases de données doivent être sauvegardés ?
-- À quelle fréquence effectuer des **sauvegardes automatiques** ? (quotidien, hebdomadaire…)
-- Quels outils peuvent être utilisés pour les sauvegardes et la restauration ? (ex : `mysqldump`, `pg_dump`, snapshots,
-  sauvegarde S3…)
-- Comment planifier des **mises à jour régulières** des dépendances et du serveur ?
+- Quelle est la différence entre un **serveur de production** et un **serveur d'intégration** ?
+- Pourquoi un **environnement de test** doit-il être le plus proche possible de l’environnement de production ?
+- Quelle différence y a-t-il entre **un serveur local** et **une machine virtuelle ou un conteneur** pour exécuter des
+  tests ?
+- Comment peut-on exécuter un **serveur PHP** ou **Node.js** en local sans serveur distant ?
+- À quoi sert **SQLite**, et pourquoi est-ce un bon choix pour tester une base de données en local ?
+- Quels outils peuvent être utilisés pour **simuler des requêtes et tester les réponses de l’API** ?
+- Comment s’assurer que les modifications effectuées **n’impactent pas négativement** l’application existante ?
 
-**Livrable attendu** : Un plan de sauvegarde avec les fichiers concernés et la fréquence recommandée.
+**Astuce :**
+
+- Des outils comme **Postman** ou **cURL** permettent d’envoyer des requêtes HTTP et de tester le bon fonctionnement de
+  l’API.
+- L’utilisation de **Docker** permet de créer un environnement isolé et reproductible pour les tests.
+
+**Livrable attendu** :  
+Une **courte procédure** décrivant comment tester l’application en local et vérifier le bon fonctionnement des requêtes
+API.
 
 ---
 
-### Sécurité et gestion des accès
+### 5.3. Organisation des fichiers et sauvegardes
 
 **Objectif :**  
-Établir les bonnes pratiques de sécurité pour protéger l’application.
+Apprendre à identifier **les fichiers importants** et à organiser les données pour **éviter les pertes**.
 
-- Quels ports réseau doivent être ouverts et quels services doivent être protégés ?
-- Quels mécanismes d’**authentification et de gestion des accès** mettre en place ?
-    - Gestion des **droits sur le serveur** (utilisateur root vs utilisateur restreint).
-    - Utilisation d’un **pare-feu (iptables, UFW)**.
-    - Restriction d’accès aux **services sensibles**.
-- Comment chiffrer les données sensibles stockées sur le serveur (ex: fichiers `.env`, bases de données) ?
+- Quels fichiers sont **essentiels** au bon fonctionnement de l’application ?
+- Pourquoi est-il important de **sauvegarder régulièrement la base de données** ?
+- Quelle différence entre une **sauvegarde complète** et une **sauvegarde incrémentale** ?
+- Où et comment stocker les fichiers de sauvegarde (sur son PC, sur un serveur distant, dans le cloud…) ?
 
-**Livrable attendu** : Une liste des mesures de sécurité à appliquer sur le serveur d’hébergement.
+**Astuce :** Dans un projet réel, il existe des outils pour automatiser les sauvegardes, comme `cron` sous Linux ou des
+services comme **Amazon S3**.
+
+**Livrable attendu** : Une **liste des fichiers essentiels** à sauvegarder et une **proposition de stratégie simple** de
+sauvegarde.
 
 ---
 
-### Hébergement et mise en production
+### Premiers pas en sécurité
 
 **Objectif :**  
-Préparer une stratégie de déploiement pour un environnement de production stable.
+Comprendre les **premières étapes** pour sécuriser un serveur qui hébergerait une application backend.
 
-- Comment structurer un **workflow de déploiement** : manuel, semi-automatisé ou CI/CD ?
-- Quels outils peuvent être utilisés pour l’automatisation du déploiement ? (Ex: Ansible, Docker, GitHub Actions, GitLab
-  CI/CD)
-- Quelle **stratégie de monitoring** mettre en place pour suivre l’état du serveur et des services ? (Ex: Prometheus,
-  Grafana, Zabbix…)
-- Comment prévoir la montée en charge et la scalabilité de l’application en fonction du trafic ?
+- Pourquoi **ne jamais stocker les mots de passe** directement dans le code source ?
+- Qu’est-ce qu’un **fichier `.env`** et comment protège-t-il les informations sensibles ?
+- Pourquoi faut-il **limiter les accès au serveur** (ex : interdiction de se connecter en "root") ?
+- Quels sont les **risques liés à une API publique**, et comment peut-on limiter l’accès à certaines fonctionnalités ?
 
-**Livrable attendu** : Un document listant les outils et stratégies recommandés pour le déploiement et la
-surveillance.
+**Astuce :** Même en local, prendre **de bonnes habitudes** dès le début permet d’éviter de graves erreurs en
+production.
+
+**Livrable attendu** : Une **liste des bonnes pratiques** pour sécuriser un backend, même en environnement de test.

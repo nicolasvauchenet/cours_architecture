@@ -35,6 +35,7 @@ Le cours est divisé en **trois jours** :
 - **Hexagonale : découplage et ports/adapters.**
 - **Hébergement et déploiement : serveurs, conteneurs, cloud.**
 - **Démonstrations et exemples en PHP et JavaScript.**
+- **Diagrammes UML : cas d’utilisation, composants, déploiement.**
 
 ### **Jour 3 : Études de cas & évaluation**
 
