@@ -112,8 +112,8 @@ Elle sera proposée **en PHP et en JavaScript (Node.js)** pour que chacun puisse
 
 ## 5. Mise en pratique pour les administrateurs infrastructure
 
-L’objectif est de **comprendre les bases de l’hébergement d’une application backend** et d’**anticiper son déploiement
-**.  
+L’objectif est de **comprendre les bases de l’hébergement d’une application backend** et d’**anticiper son 
+déploiement**.  
 Cette mise en pratique vous permettra d’identifier **les éléments techniques**, de **préparer un environnement simple**,
 et d’**établir les premiers réflexes en matière de sécurité et de maintenance**.
 
