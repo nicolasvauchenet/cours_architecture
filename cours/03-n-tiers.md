@@ -37,7 +37,7 @@ responsabilité bien définie.
 
 ### Schéma général d’une architecture en couche :
 
-![Schéma d'une architecture en coouches](../images/03-layered-schema.png)
+![Schéma d'une architecture en couches](../images/03-layered-schema.png)
 
 ---
 
