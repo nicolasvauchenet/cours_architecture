@@ -119,7 +119,7 @@ et d’**établir les premiers réflexes en matière de sécurité et de mainten
 
 ---
 
-### 5.1. Découverte des composants techniques
+### Découverte des composants techniques
 
 **Objectif :**  
 Se familiariser avec les **différents éléments techniques** qui composent l’application.
@@ -135,7 +135,7 @@ Se familiariser avec les **différents éléments techniques** qui composent l�
 
 ---
 
-### 5.2. Préparation d’un environnement de test
+### Préparation d’un environnement de test
 
 **Objectif :**  
 Installer un environnement dédié aux tests **end-to-end** permettant de valider le bon fonctionnement de l’application
@@ -162,7 +162,7 @@ API.
 
 ---
 
-### 5.3. Organisation des fichiers et sauvegardes
+### Organisation des fichiers et sauvegardes
 
 **Objectif :**  
 Apprendre à identifier **les fichiers importants** et à organiser les données pour **éviter les pertes**.
