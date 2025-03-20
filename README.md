@@ -2,8 +2,8 @@
 
 ## Objectifs du cours
 
-Ce cours a pour objectif de fournir une **compréhension approfondie des architectures applicatives**, en équilibrant *
-*théorie et pratique** pour les profils **développement (DLW)** et **administration système (IRC)**.
+Ce cours a pour objectif de fournir une **compréhension approfondie des architectures applicatives**, en équilibrant
+**théorie et pratique** pour les profils **développement (DLW)** et **administration système (IRC)**.
 
 À la fin du cours, les étudiants seront capables de :
 
