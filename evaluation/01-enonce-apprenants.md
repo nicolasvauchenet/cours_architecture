@@ -4,7 +4,7 @@
 
 ---
 
-## 1️⃣ QCM (5 questions - 10 points)
+## 1. QCM (5 questions - 10 points)
 
 **Consigne : Une seule réponse correcte par question.**
 
@@ -42,7 +42,7 @@
 
 ---
 
-## 2️⃣ Vrai/Faux (5 questions - 10 points)
+## 2. Vrai/Faux (5 questions - 10 points)
 
 **Consigne : Indiquez si l’affirmation est vraie ou fausse, puis justifiez votre réponse en une phrase.**
 
@@ -58,7 +58,7 @@
 
 ---
 
-## 3️⃣ Questions courtes (5 questions - 10 points)
+## 3. Questions courtes (5 questions - 10 points)
 
 **Consigne : Répondez en 2 à 3 phrases maximum.**
 
@@ -74,7 +74,7 @@
 
 ---
 
-## 4️⃣ Étude de cas / Analyse d’un problème (30 min - 15 points)
+## 4. Étude de cas / Analyse d’un problème (30 min - 15 points)
 
 **Consigne : Lisez le cas suivant et répondez aux questions en expliquant vos choix.**
 
@@ -114,7 +114,7 @@ L’équipe technique est composée de développeurs et d’administrateurs syst
 
 ---
 
-## 5️⃣ Rédaction technique / Justification d’un choix (30 min - 15 points)
+## 5. Rédaction technique / Justification d’un choix (30 min - 15 points)
 
 Consigne : Choisissez l’un des sujets suivants et rédigez une réponse argumentée (10-15 lignes).
 
